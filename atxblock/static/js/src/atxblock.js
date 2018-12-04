@@ -1,4 +1,4 @@
-//window.onload = onPageLoad();
+window.onload = onPageLoad();
 
 function onPageLoad() {
   d=document;
