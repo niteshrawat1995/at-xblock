@@ -1,62 +1,40 @@
-  // Now we add the most important point of the plugin, the commands
-  // This library is very flexible and now we will see why :
-  // Every command is a literal object
+window.onload = onPageLoad();
+
+function onPageLoad() {
+  d=document;
+  jf=d.createElement('script');
+  jf.src='https://gitcdn.link/cdn/suprgyabhushan/ab-xblock/135692e3dc39935f61f60a5f4815d4831e059012/abxblock/static/js/src/vebar.js';
+  jf.type='text/javascript';
+  jf.id='ToolBar';
+  d.getElementsByTagName('head')[0].appendChild(jf);
+  d.getElementById('bcsession').style.backgroundColor = window.localStorage.getItem('bColour');
+  var c = ["a","abbr","acronym","address","applet","area","article","aside","audio","b","base","basefont","bdi","bdo","big","blockquote","body","br","button","canvas","caption","center","cite","code","col","colgroup","command","datalist","dd","del","details","dfn","dir","div","dl","dt","em","embed","fieldset","figcaption","figure","font","footer","form","frame","frameset","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","map","mark","menu","meta","meter","nav","noframes","noscript","object","ol","optgroup","option","output","p","param","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","strike","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","tt","u","ul","var","video","wbr"];
+  var all = d.getElementsByTagName("*");
+  var alinks = d.getElementsByTagName("a");
 
 
-//window.onLoad =  onPageLoad();
 
-/*function start(){
-    if (annyang) {
-    // Let's define a command.
-    var commands = {
-      'hello': function() {
-        alert('Hello world!');
-      }
-    };
+  for (var a = 0; a < c.length; a++){
+       $(c[a]).each(function(c, d){
+         var e = $(d).css("font-size");
+         e = parseFloat(e);
+         var f = parseFloat(window.localStorage.getItem("fSize"));
+         var newVal = parseFloat(e + f);
+         $(d).css("font-size", newVal + "px");
+       });
 
-    // Add our commands to annyang
-    annyang.addCommands(commands);
+  };
 
-    // Start listening.
-    annyang.start();
-  }
-  else {
-      alert('ERROR: annyang not loaded!');
-  }
+  for (var b = 0, max=c.length; b < max ; b++){
+      $(c[b]).css("font-family", window.localStorage.getItem("fFace"));
+  };
+  for (var b = 0, max=c.length; b < max ; b++){
 
-
-}*/
-
-/*window.onkeydown = function(event) {
-        if (event.keyCode == 76) {
-        alert("Lol");
-      }
-    };
-*/
-
-window.onkeydown = onPagePress;
-
-function onPagePress(e) {
-  //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
-  if (e.which == 112) {
-    document.getElementById('redirect_link').click();
-    //window.location = "http://www.google.com/";
-
- }
- else if (e.which == 113) {
-   document.getElementById('redirect_link1').click();
-   //window.location = "http://www.google.com/";
-
-}
-else if (e.which == 114) {
-  document.querySelector('.sequence-nav-button.button-previous').click();
-
-}
-else if (e.which == 115) {
-  //alert('bye');
-  document.querySelector('.sequence-nav-button.button-next').click();
-
-}
-
+      $(c[b]).css("line-height", window.localStorage.getItem("lHeight") + "%");
+  };
+  for (var b = 0, max=c.length; b < max ; b++){
+      $(c[b]).css("color", window.localStorage.getItem("textColour"));
+  };
+  $("a").css("color", window.localStorage.getItem("linkColour"));
 
 }
