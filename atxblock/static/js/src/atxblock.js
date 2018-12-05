@@ -36,7 +36,10 @@ function onPageLoad() {
   };
   for (var b = 0, max=c.length; b < max ; b++){
       //$(c[b]).css("color", window.localStorage.getItem("textColour"));
-      d.querySelectorAll(c[b]).style.color = window.localStorage.getItem("textColour");
+      var e = d.querySelectorAll(c[b]);
+      for (var i = 0; i < e.length; i++) {
+	       $(e[i]).css("color", window.localStorage.getItem("textColour"));
+	    };
   };
   //$("a").css("color", window.localStorage.getItem("linkColour"));
 
