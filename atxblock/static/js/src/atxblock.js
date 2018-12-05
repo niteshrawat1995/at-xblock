@@ -39,7 +39,7 @@ function onPageLoad() {
   };
   $("a").css("color", window.localStorage.getItem("linkColour"));
 
-  d.querySelector('.sequence-nav-button.button-next').style.color = window.localStorage.getItem("linkColour");
-  d.querySelector('.sequence-nav-button.button-previous').style.color = window.localStorage.getItem("linkColour");
+  d.querySelector("button").style.color = window.localStorage.getItem("linkColour");
+  //d.querySelector('.sequence-nav-button.button-previous').style.color = window.localStorage.getItem("linkColour");
 
 }
