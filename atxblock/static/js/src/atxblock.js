@@ -35,7 +35,8 @@ function onPageLoad() {
       $(c[b]).css("line-height", window.localStorage.getItem("lHeight") + "%");
   };
   for (var b = 0, max=c.length; b < max ; b++){
-      $(c[b]).css("color", window.localStorage.getItem("textColour"));
+      //$(c[b]).css("color", window.localStorage.getItem("textColour"));
+      d.querySelector(c[b]).style.color = window.localStorage.getItem("textColour");
   };
   $("a").css("color", window.localStorage.getItem("linkColour"));
 
