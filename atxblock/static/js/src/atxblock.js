@@ -36,7 +36,7 @@ function onPageLoad() {
   };
   for (var b = 0, max=c.length; b < max ; b++){
       //$(c[b]).css("color", window.localStorage.getItem("textColour"));
-      d.querySelector(c[b]).style.color = window.localStorage.getItem("textColour");
+      d.querySelectorAll(c[b]).style.color = window.localStorage.getItem("textColour");
   };
   //$("a").css("color", window.localStorage.getItem("linkColour"));
 
