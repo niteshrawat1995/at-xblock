@@ -43,7 +43,7 @@ function onPageLoad() {
   };
   //$("a").css("color", window.localStorage.getItem("linkColour"));
 
-  //d.querySelector("button").style.color = window.localStorage.getItem("linkColour");
+  d.querySelector("h2").style.color = window.localStorage.getItem("textColour");
   //d.querySelector('.sequence-nav-button.button-previous').style.color = window.localStorage.getItem("linkColour");
 
 }
