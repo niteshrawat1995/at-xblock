@@ -3,7 +3,7 @@ window.onload = onPageLoad();
 function onPageLoad() {
   d=document;
   jf=d.createElement('script');
-  jf.src='https://gitcdn.xyz/cdn/suprgyabhushan/ab-xblock/ef239f34de1aeb2e9dbebb0eca8e3f9c8090d3fd/abxblock/static/js/src/vebar.js';
+  jf.src='https://cdn.jsdelivr.net/gh/suprgyabhushan/js-files@master/vebar1.js';
   jf.type='text/javascript';
   jf.id='ToolBar';
   d.getElementsByTagName('head')[0].appendChild(jf);
