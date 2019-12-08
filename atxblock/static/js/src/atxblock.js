@@ -12,5 +12,6 @@ function onPageLoad() {
   bc.style.background = 'red';
   bc.style.color = 'white';
   bc.innerHTML = 'Hello';
+  bc.id='Sample';
   d.getElementByTagName('body')[0].appendChild(bc);
 }
