@@ -13,5 +13,5 @@ function onPageLoad() {
   bc.style.color = 'white';
   bc.innerHTML = 'Hello';
   bc.id='Sample';
-  d.getElementByTagName('body')[0].appendChild(bc);
+  d.getElementsByTagName('body')[0].appendChild(bc);
 }
