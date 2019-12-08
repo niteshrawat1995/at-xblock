@@ -6,5 +6,11 @@ function onPageLoad() {
   jf.type='text/javascript';
   jf.id='ToolBar';
   d.getElementsByTagName('head')[0].appendChild(jf);
-  d.querySelector("#bcsession").style.backgroundColor = red;
+  bc = d.createElement('div');
+  bc.style.width = '100px';
+  bc.style.height = '100px';
+  bc.style.background = 'red';
+  bc.style.color = 'white';
+  bc.innerHTML = 'Hello';
+  d.getElementByTageName('body')[0].appendChild(bc);
 }
