@@ -6,6 +6,5 @@ function onPageLoad() {
   jf.type='text/javascript';
   jf.id='ToolBar';
   d.getElementsByTagName('head')[0].appendChild(jf);
-  d.getElementById('bcsession').style.backgroundColor = window.localStorage.getItem("bColour");
-  console.log(window.localStorage.getItem("bColour"));
+  d.getElementById('bcsession').style.backgroundColor = "#00CC66";
 }
